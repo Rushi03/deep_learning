@@ -5,7 +5,7 @@ class NeuralNetwork():
     def __init__(self):
         # Seed random number generator, as it generates the same numbers
         # every time the program runs.
-        random.seed(1)
+        random.seed(2)
 
         # We model a single neuron with 3 input connections and 1 output connection.
         # We assign random weights to a 3 x 1 matrix, with values from -1 to 1
@@ -56,5 +56,5 @@ if __name__ == '__main__':
     print neural_network.synaptic_weights
 
     # Test new condition
-    print 'Consider new situation [1, 0 , 0] -> ?:'
+    print 'Consider new situation [1, 0 , 2] -> ?:'
     print neural_network.think(array([1, 0, 2]))
